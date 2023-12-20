@@ -1,0 +1,215 @@
+*{
+	margin:4px;
+}
+body{
+	background-image:url(img/MH4UW.png);
+	font-family:"arial";
+}
+div{
+	border-radius: 5px;
+}
+p{
+	margin:10px;
+}
+table{	
+	border-style:ridge;
+	border-color :#006666; 
+	border-width:5px; 
+	background-color:black;
+	/*Gradiante aplicado en el fondo del equipo*/
+	background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+strong{
+	color:blue;
+}
+/*Transformacion y traslacion de la imagen / 0.5 de transition por que tiene un efecto curioso*/
+img:hover[src="img/twi.png"]
+{
+	transform: rotate(720deg)scale(1.6); transition: 3s,3s,3s;border-radius:50px;
+	transition: 0.5s;
+}
+@font-face{
+    font-family: fuente;
+    src: url(TrashHand.ttf);
+    font-weight: bold;
+}
+a:link{
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+	background-color: transparent;
+	text-decoration:none;
+}
+a:hover{
+    color: red;
+	background-color: transparent;
+	text-decoration: underline;
+}
+a:active{
+    color: yellow;
+	background-color: transparent;
+	text-decoration: underline;
+}
+#titulo:hover{
+	background:black;
+	color:white;
+}
+form{
+	background-color:#ffe6cc;
+	padding:15px;
+	border-radius: 5px;
+	border-color:#006666;
+	border-style:solid;
+	border-width:5px;
+	width:420px;
+	margin: auto;
+}
+#contenedor{
+	margin-top:3%;
+	margin-bottom:3%;
+	margin-left:auto;
+	margin-right:auto;
+	background-image: url("img/fondomh.jpg");
+	border-width :5px;
+	border-color :orange;
+	border-style:solid;
+	border-radius:100px;
+	padding-left:60px;
+	padding-right:60px;
+	width:1250px;
+}
+#titulo{ 
+	float:center;
+	text-shadow: 2px 2px red;/* Borde rojo implementado en el titulo*/
+	width:290px;
+	height:73px;
+	text-align:center;
+	border: 3px solid #ffe6cc;/* Aplique el outline con el estilo soutset*/
+    outline-style: outset;
+    outline-color: #006666; 
+	background-color:#ffb366;
+	margin-left:auto;
+	margin-right:auto;
+}
+#menu{
+	float:center;
+	width:425px;
+	height:60px;
+	border-color:#006666;
+	border-style :solid;
+	background-color:#ffe6cc;
+	padding:5px;
+	text-align:justify;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:80px;
+}
+/*Un movimineto divertido*/
+@-webkit-keyframes venta {
+    0%   {background-color:red; 	left:150px; top:100px;}
+    25%  {background-color:yellow; 	left:350px; top:100px;}
+	40%  {background-color:pink; 	left:150px; top:300px;}
+    50%  {background-color:blue; 	left:350px; top:300px;}
+	60%  {background-color:green;	left:150px; top:100px;}
+    75%  {background-color:green; 	left:150px; top:400px;}
+    100% {background-color:red; 	left:150px; top:100px;}
+}
+#puntoventa{
+	animation-name: venta;
+    animation-duration: 5s;
+	position:fixed;
+	top: 100px; 
+	left:150px;
+	border-style:solid;
+	border-color :#006666;
+	background:white;
+	width:160px;
+	height:190px;
+	}
+#bloque1{
+	float:left;
+	clear:right;
+	border-style:solid;
+	border-color:#006666;
+	background-color:#ffe6cc;
+	text-align:justify;
+}
+#bloque2{
+	float:left;
+	clear:right;
+	border-style:solid;
+	border-color :#006666;
+	background-color:#ffe6cc;
+	text-align:justify;
+}
+#bloque02{
+	font-family: fuente;/*Funte implementado */
+	width:600px;
+	border-style:double;
+	border-color :#006666;
+	border-right-width:5px;
+	border-left-width:5px;
+	border-top-width:20px;
+	border-bottom-width:20px;
+	background-color:#ffe6cc;
+	text-align:justify;
+}
+#bloque3{
+	float:left;
+	clear:right;
+	margin-left:auto;
+	margin-right:auto;
+	border-style :solid;
+	border-color :#006666;
+	background-color:#ffe6cc;
+	text-align:justify;
+}
+#tipos{
+	border-style:solid;
+	border-color :#006666;
+	width:180px;
+	background-color:#ffe6cc;
+	text-align:justify;
+}
+#bloque4{
+	width:200px;
+	border-style:dashed;
+	border-color :#006666;
+	border-width:10px;
+	background-color:white;
+}
+#pie{
+	float:center;
+	clear:left;
+	width:800px;
+	height:auto;
+	border-style:solid;
+	border-color :#006666;
+	background-color:#ffb366;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+.puntoventa{
+	animation: venta 2s normal 1 ease forwards ;
+	width:150px;
+	height:125px;
+}
+.contact {
+	position:fixed;
+	top:100px;
+	right:108px;
+	background-color:#00aced;
+	border-style:dotted;
+	border-color :yellow;
+	border-radius:20px;
+}
+.Caratula{
+	width:400px;
+	height:350px;
+	border-style:solid;
+	border-color:#006666;
+}
